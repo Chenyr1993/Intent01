@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_main"
+        android:text="這是第三個畫面！"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="關閉第三個活動"
+        android:id="@+id/btnStartActivity_1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textview_main"
+        app:layout_constraintTop_toBottomOf="@+id/textview_main"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="啟動第二個活動"
+        android:id="@+id/btnStartActivity_2"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnStartActivity_1"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartActivity_1"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
